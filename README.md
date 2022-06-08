@@ -1,0 +1,1 @@
+# vite-tailwinds-dynamic-route-ts
