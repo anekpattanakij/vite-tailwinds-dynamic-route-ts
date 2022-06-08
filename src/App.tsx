@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import { useRoutes, useLocation } from 'react-router-dom';
 import Nav from '$layout/Nav';
+// @ts-ignore
 import routes from '~react-pages';
 
 function Pages() {
