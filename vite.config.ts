@@ -23,9 +23,6 @@ const importMode: ImportModeResolver = (path) => {
 
 
 export default defineConfig({
-	define: {
-		'process.env': process.env,
-	},
 	plugins: [
 		vitePluginAxe(),
 		tsconfigPaths(),

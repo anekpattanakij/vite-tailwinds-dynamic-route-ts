@@ -23,20 +23,12 @@ export const CommonContextProvider = ({
 }: {
   children: JSX.Element;
 }) => {
-  const storage = !process.browser
-    ? {
-        getItem: () => null,
-        setItem: () => {},
-        removeItem: () => {},
-      }
-    : localStorage;
-  const defaultState = {
-    darkmode: false,
-  };
   let [currentState, setState] = useStorageState(
-    storage,
+    localStorage,
     "raritimism-state",
-    defaultState
+    {
+      darkmode: false,
+    }
   );
   // define initial state
   let darkModeInitialState = false;
